@@ -20,8 +20,8 @@ var options = {
 }
 
 var request = new XMLHttpRequest();
-//request.open("GET", "http://10.245.137.216:8000/students/?format=json&id=2", true); //true to make it do asynchronously
-request.open("GET", "./students.txt", true);
+request.open("GET", "http://calum-calder.com/api/studentfriends/?format=json", true); //true to make it do asynchronously
+//request.open("GET", "./students.txt", true);
 request.addEventListener("load", finishedLoading);
 request.send();
 
